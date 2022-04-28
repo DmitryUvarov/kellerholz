@@ -1,0 +1,45 @@
+// общие стили для кнопок на странице
+
+.btn {
+
+}
+
+.btn_yellow {
+        display: flex;
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        background: #FED105;
+        border-radius: 10px;
+        padding: 15px 32px;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        max-height: 48px;
+        &::before {
+            margin-right: 14px;
+            color: #231F20;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                background: #dfb80c;
+            }
+        }
+
+}
+.btn-transparent {
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    transition: all 0.3s ease 0s;
+    color: #fff;
+    @media (any-hover: hover) {
+        &:hover {
+            background: #fff;
+            color: #000;
+        }
+    }
+}

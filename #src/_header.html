@@ -1,0 +1,37 @@
+<header class="header">
+    <div class="header__wrapper @@if(link==2){_active}">
+        <div class="header__container _container">
+            <div class="header__body">
+                <div class="header__logo">
+                    <a href="index.html"><img src="img/header/logo.png" alt=""></a>
+                </div>
+                <nav class="header__menu menu-header">
+                    <ul class="menu-header__items">
+                        <li class="menu-header__item"><a class="menu-header__link @@if(link==1){_active}" href="">Пивоварня</a></li>
+                        <li class="menu-header__item"><a class="menu-header__link @@if(link==2){_active}" href="restaurant.html">Рестораны</a></li>
+                        <li class="menu-header__item"><a class="menu-header__link @@if(link==3){_active}" href="">Магазины</a></li>
+                        <li class="menu-header__item"><a class="menu-header__link @@if(link==4){_active}" href="">Наше&nbspпиво</a></li>
+                        <li class="menu-header__item"><a class="menu-header__link @@if(link==5){_active}" href="">О&nbspнас</a></li>
+                        <li class="menu-header__item"><a class="menu-header__link @@if(link==6){_active}" href="">Доставка</a></li>
+                        <li class="menu-header__item"><a class="menu-header__link @@if(link==7){_active}" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__info info-header">
+                    <div class="info-header__items">
+                        <a class="info-header__item _people _icon-people"></a>
+                        <a class="info-header__item _basket _icon-basket"></a>
+                        <div data-da=".menu-header__items,479,98" class="info-header__item _language">
+                            <span class="info-header__lang _active">RO</span>
+                            <span class="info-header__lang">RU</span>
+                        </div>
+                        <button type="button" class="icon-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

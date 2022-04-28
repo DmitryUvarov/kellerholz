@@ -1,0 +1,73 @@
+.contact {
+    background: #000000;
+    padding: 60px 0 12px 0;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: url('../img/contacts/bg.png');
+        position: absolute;
+        top: -65px;
+        @include adaptive-value("right", -115, -500, 1);
+    }
+
+    &__container {
+    }
+    &__body {
+    }
+    &__title {
+        font-family: "Georgia";
+        font-weight: 700;
+        line-height: 114%;
+        color: #FFFFFF;
+        @include adaptive-value("font-size", 38, 20, 1);
+        padding-bottom: 40px;
+    }
+    &__items {
+        @media (min-width: $md3+px) {
+            display: flex;
+        }
+    }
+    &__item {
+        &:not(:last-child) {
+            padding-right: 110px;
+        }
+    }
+    &__content {
+        &>* {
+            padding-bottom: 48px;
+        }
+        & span {
+            font-family: "Georgia";
+            font-style: italic;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 113%;
+            color: #8E898F;
+            padding-bottom: 10px;
+        }
+
+        & p {
+            font-weight: 400;
+            line-height: 140%;
+            color: #FFFFFF;
+            @include adaptive-value("font-size", 18, 14, 1);
+        }
+    }
+    &__content-links {
+
+        & a {
+            @include adaptive-value("font-size", 18, 14, 1);
+            line-height: 140%;
+            color: #FFFFFF;
+            transition: color 0.3s ease 0s;
+            &:not(:last-child) {
+                padding-right: 45px;
+            }
+            @media (any-hover: hover) {
+                &:hover {
+                    color: #FED105;
+                }
+            }
+        }
+    }
+}

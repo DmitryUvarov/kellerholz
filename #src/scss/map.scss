@@ -1,0 +1,9 @@
+.map {
+    width: 100%;
+    height: 451px;
+    margin-bottom: 10px;
+
+    @media (max-width: $md3+px) {
+        margin-bottom: 25px;
+    }
+}

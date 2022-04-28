@@ -1,0 +1,121 @@
+// https://fls.guru/ibg.html
+
+
+
+._title {
+        font-family: "Georgia";
+        font-weight: 700;
+        line-height: 114%;
+        color: #FFFFFF;
+        @include adaptive-value("font-size", 42, 20, 1);
+}
+
+
+._title-restaurant {
+        font-family: "Georgia";
+        font-size: 22px;
+        line-height: 113%;
+        color: #FED105;
+        @media (max-width: $md4+px) {
+            font-size: 20px;
+        }
+}
+._subtitle-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #8E898F;
+    max-width: 440px;
+
+    @media (max-width: $md2+px) {
+        max-width: 300px;
+    }
+    @media (max-width: $md4+px) {
+        font-size: 13px;
+    }
+}
+._kind {
+        font-family: "Roboto";
+        font-weight: 700;
+        display: flex;
+        font-size: 12px;
+        line-height: 116%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        align-items: center;
+
+        &::before {
+            margin-right: 16px;
+            font-size: 12px;
+        }
+        &._icon-fastfood::before{
+            font-size: 20px;
+        }
+        &._icon-bear::before{
+            font-size: 20px;
+        }
+}
+
+
+
+
+
+
+
+.crumbs {
+    display: flex;
+    padding-bottom: 11px;
+
+    & a {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        line-height: 120%;
+        color: #fff;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: #FED105;
+                &::before {
+                    color: #fff;
+                }
+            }
+        }
+        &::before {
+            @include adaptive-value("padding-left", 23, 15, 1);
+            @include adaptive-value("padding-right", 23, 15, 1);
+            font-size: 10px;
+        }
+    }
+    @media (max-width: 430px) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+._ibg{
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    }
+
+    ._ibg img {
+
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    }
+
+
